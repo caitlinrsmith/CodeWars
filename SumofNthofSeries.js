@@ -1,6 +1,6 @@
 // https://www.codewars.com/kata/555eded1ad94b00403000071/train/javascript
 
-function seriesSum(n) {
+function SeriesSum(n) {
     // Handle the edge case where n is 0
     if (n === 0) {
         return "0.00";
@@ -14,6 +14,11 @@ function seriesSum(n) {
     // Round the result to 2 decimal places and return it as a string
     return sum.toFixed(2);
 }
+
+// Alias SeriesSum to seriesSum
+const seriesSum = SeriesSum;
+
+// ** 3 tests were looking for the SeriesSum function while one test was looking for seriesSum, hence the alias needed at the end
 
 // Your task is to write a function which returns the n-th term of the following series, which is the sum of the first n terms of the sequence (n is the input parameter).
 
